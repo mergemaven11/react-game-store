@@ -5,9 +5,6 @@ import Cart from '../cart';
 
 import { CartContext } from '../cart/context';
 
-const StripeAPI = `${process.env.REACT_APP_STRIPE_API_TOKEN}`
-
-
 export default function Store() {
 
     const cartCtx = useContext(CartContext)
@@ -28,8 +25,6 @@ export default function Store() {
                 </button>
             </div>
         </div>))}
-
-            <Cart stripeToken={StripeAPI} />
     </div>
     )
 }

@@ -1,9 +1,12 @@
 import React from 'react';
 
+import BaseLayout from '../../components/base'
+import Store from '../../components/store'
+
 export default function StoreProductsPage() {
     return (
-        <div>
-            <h1>Game Land!</h1>
-        </div>
+        <BaseLayout title="Browse our inventory">
+            <Store />
+        </BaseLayout>
     );
 }
