@@ -7,8 +7,11 @@ import CartProvider from './components/cart/context';
 import StoreProductsPage from './pages/store'
 import ConfirmCartPage from './pages/getCart';
 
+import GlobalStyles from './components/styled/global';
+
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyles />
     <BrowserRouter>
       <CartProvider>
         <Switch>
