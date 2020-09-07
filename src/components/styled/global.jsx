@@ -7,7 +7,6 @@ const GlobalStyles = createGlobalStyle`
   body {
     background: #f4f6f3;
     font-family: 'Ibarra Real Nova', sans-serif;
-    line-height: 1.4;
   }
 
   * {

@@ -3,6 +3,9 @@ import React, { useContext } from 'react';
 import products from '../../data/products';
 import Cart from '../cart';
 
+import Main from '../styled/main';
+
+
 import { CartContext } from '../cart/context';
 
 export default function Store() {
@@ -12,11 +15,11 @@ export default function Store() {
     return (
     <div>
         {
-        products.map(product => (<div>
-            <div>
+        products.map(product => (
+        <Main.Product>
             <img src={ `/images/${product.price}.jpg` } alt={product.name} width={ 100 }/>
-            </div>
-            <div>{product.name}</div>
+            <h3>{product.name}</h3>
+
             <div>
                 <button
                 onClick={() => cartCtx.addToCart(product)}
@@ -24,7 +27,7 @@ export default function Store() {
                 Add to cart
                 </button>
             </div>
-        </div>))}
+        </Main.Product>))}
     </div>
     )
 }

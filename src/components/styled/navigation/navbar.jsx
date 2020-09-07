@@ -9,14 +9,14 @@ background: #12151c;
 font-family: "Poppins", sans-serif;
 width: 100%;
 padding: 0 1rem;
-height: 110px;
+height: 105px;
 background-color: #12151c;
 -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
-border-radius: 1px;
+border-radius: 0.5px;
 
 h2 {
     text-align : center;
@@ -27,14 +27,13 @@ h2 {
 
 const Promo = styled.div`
 width: 100%;
-height: 20px;
+height: 30px;
 background: #000;
 color: white;
 text-transform: uppercase;
 text-align: center;
 overflow: hidden;
 color: #fff;
-
 
 `
 
@@ -60,6 +59,8 @@ text-align: right;
 right: 10px;
 height: 120px;
 float: right;
+padding: 1em;
+
 
 `
 
