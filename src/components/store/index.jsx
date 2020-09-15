@@ -19,6 +19,7 @@ export default function Store() {
         <Main.Product>
             <img src={ `/images/${product.price}.jpg` } alt={product.name} width={ 100 }/>
             <h3>{product.name}</h3>
+            <h3>Price: ${product.amount.toFixed(2)}</h3>
 
             <div>
                 <button
